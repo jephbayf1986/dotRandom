@@ -8,7 +8,12 @@ namespace dotRandom
 {
     public static partial class DotRandom
     {
-        public static T RandomModel<T>()
+        /// <summary>
+        /// Generate Random
+        /// </summary>
+        /// <typeparam name="T">Type to be generated</typeparam>
+        /// <returns>Instance of type with Random values in attributes where possible</returns>
+        public static T GenerateRandom<T>()
         {
             var returnType = typeof(T);
 
