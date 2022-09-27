@@ -59,3 +59,15 @@ var dateIn2022 = DotRandom.RandomDateInYear(2022);
 
 var randomTimeToday = DateTime.Today.WithRandomTime();
 ```
+
+Generating a boolean:
+
+```cs
+var randomBool = DotRandom.RandomBool();
+```
+
+Generate a model:
+
+```cs
+var myModelInstance = DotRandom.GenerateRandom<MyModel>();
+```
