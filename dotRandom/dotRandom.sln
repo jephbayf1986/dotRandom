@@ -5,6 +5,8 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotRandom", "dotRandom\dotRandom.csproj", "{48595006-D8B7-4416-B36F-307B25D70F01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotRandom.Tests", "dotRandom.Tests\dotRandom.Tests.csproj", "{4E995E34-48A7-44C0-AFD2-987EA5051C07}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{48595006-D8B7-4416-B36F-307B25D70F01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48595006-D8B7-4416-B36F-307B25D70F01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48595006-D8B7-4416-B36F-307B25D70F01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E995E34-48A7-44C0-AFD2-987EA5051C07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E995E34-48A7-44C0-AFD2-987EA5051C07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E995E34-48A7-44C0-AFD2-987EA5051C07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E995E34-48A7-44C0-AFD2-987EA5051C07}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
