@@ -2,8 +2,6 @@
 {
     public class DateTests
     {
-        private const int numberOfTests = 1000;
-
         [Fact]
         public void DateInPastMustBeInPast()
         {
@@ -11,7 +9,7 @@
             var resultList = new List<DateTime>();
 
             // Act
-            for (int i = 0; i < numberOfTests; i++)
+            for (int i = 0; i < TestingSampleSize; i++)
                 resultList.Add(DotRandom.RandomDateInPast());
 
             // Assert
@@ -26,7 +24,7 @@
             var resultList = new List<DateTime>();
 
             // Act
-            for (int i = 0; i < numberOfTests; i++)
+            for (int i = 0; i < TestingSampleSize; i++)
                 resultList.Add(DotRandom.RandomDateInPast());
 
             // Assert
@@ -44,7 +42,7 @@
             var resultList = new List<DateTime>();
 
             // Act
-            for (int i = 0; i < numberOfTests; i++)
+            for (int i = 0; i < TestingSampleSize; i++)
                 resultList.Add(DotRandom.RandomDateInPast(maxDaysInPast));
 
             // Assert
@@ -71,7 +69,7 @@
             var resultList = new List<DateTime>();
 
             // Act
-            for (int i = 0; i < numberOfTests; i++)
+            for (int i = 0; i < TestingSampleSize; i++)
                 resultList.Add(DotRandom.RandomDateInFuture());
 
             // Assert
@@ -86,7 +84,7 @@
             var resultList = new List<DateTime>();
 
             // Act
-            for (int i = 0; i < numberOfTests; i++)
+            for (int i = 0; i < TestingSampleSize; i++)
                 resultList.Add(DotRandom.RandomDateInFuture());
 
             // Assert
@@ -104,7 +102,7 @@
             var resultList = new List<DateTime>();
 
             // Act
-            for (int i = 0; i < numberOfTests; i++)
+            for (int i = 0; i < TestingSampleSize; i++)
                 resultList.Add(DotRandom.RandomDateInFuture(maxDaysInFuture));
 
             // Assert
@@ -133,7 +131,7 @@
             var resultList = new List<DateTime>();
 
             // Act
-            for (int i = 0; i < numberOfTests; i++)
+            for (int i = 0; i < TestingSampleSize; i++)
                 resultList.Add(DotRandom.RandomDateInYear(year));
 
             // Assert

@@ -6,12 +6,15 @@ namespace dotRandom.Tests
         public void ShouldDefaultTo50Long()
         {
             // Arrange
+            var resultList = new List<string>();
 
             // Act
-            var result = DotRandom.RandomString();
+            for (int i = 0; i < TestingSampleSize; i++)
+                resultList.Add(DotRandom.RandomString());
 
             // Assert
-            result.Length.ShouldBe(50);
+            resultList.All(x => x.Length == 50)
+                      .ShouldBeTrue();
         }
 
         [Theory]
@@ -21,42 +24,45 @@ namespace dotRandom.Tests
         public void ShouldBeLengthProvided(int length)
         {
             // Arrange
+            var resultList = new List<string>();
 
             // Act
-            var result = DotRandom.RandomString(length);
+            for (int i = 0; i < TestingSampleSize; i++)
+                resultList.Add(DotRandom.RandomString(length));
 
             // Assert
-            result.Length.ShouldBe(length);
+            resultList.All(x => x.Length == length)
+                      .ShouldBeTrue();
         }
 
-        [Theory]
-        [InlineData(10)]
-        [InlineData(100)]
-        [InlineData(1000)]
-        public void ShouldBeLowerCaseWhenRequested(int length)
+        [Fact]
+        public void ShouldBeLowerCaseWhenRequested()
         {
             // Arrange
+            var resultList = new List<string>();
 
             // Act
-            var result = DotRandom.RandomLowerCaseString(length);
+            for (int i = 0; i < TestingSampleSize; i++)
+                resultList.Add(DotRandom.RandomLowerCaseString());
 
             // Assert
-            result.ShouldBe(result.ToLower());
+            resultList.All(x => x == x.ToLower())
+                      .ShouldBeTrue();
         }
 
-        [Theory]
-        [InlineData(10)]
-        [InlineData(100)]
-        [InlineData(1000)]
-        public void ShouldBeUpperCaseWhenRequested(int length)
+        [Fact]
+        public void ShouldBeUpperCaseWhenRequested()
         {
             // Arrange
+            var resultList = new List<string>();
 
             // Act
-            var result = DotRandom.RandomUpperCaseString(length);
+            for (int i = 0; i < TestingSampleSize; i++)
+                resultList.Add(DotRandom.RandomUpperCaseString());
 
             // Assert
-            result.ShouldBe(result.ToUpper());
+            resultList.All(x => x == x.ToUpper())
+                      .ShouldBeTrue();
         }
     }
 }
