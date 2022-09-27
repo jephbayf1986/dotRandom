@@ -2,6 +2,9 @@
 
 namespace dotRandom
 {
+    /// <summary>
+    /// Dot Random - Random Data Generator for Testing
+    /// </summary>
     public static partial class DotRandom
     {
         /// <summary>
@@ -22,7 +25,7 @@ namespace dotRandom
         /// <summary>
         /// Random Date in the Future
         /// </summary>
-        /// <param name="maxDaysInPast">Maximum days to go forward (Default 100 days)</param>
+        /// <param name="maxDaysInFuture">Maximum days to go forward (Default 100 days)</param>
         /// <returns>Date Time from future</returns>
         public static DateTime RandomDateInFuture(int maxDaysInFuture = 100)
         {
