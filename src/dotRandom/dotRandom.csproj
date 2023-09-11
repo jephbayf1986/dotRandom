@@ -9,7 +9,7 @@
 		<Product>dotRandom</Product>
 		<Title>dotRandom</Title>
 		<Description>dotRandom is a quick and simple Random Generator for testing in Dot Net!</Description>
-		<Copyright>2022 jephbayf1986</Copyright>
+		<Copyright>2023 jephbayf1986</Copyright>
 		<PackageProjectUrl></PackageProjectUrl>
 		<RepositoryUrl>https://github.com/jephbayf1986/dotRandom</RepositoryUrl>
 		<PackageTags>Random;Testing;C#</PackageTags>
