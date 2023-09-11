@@ -39,7 +39,7 @@ namespace dotRandom
 
             if (childProperty.PropertyType == typeof(long))
             {
-                childProperty.SetValue(parent, RandomIntBetween(10000, 99999));
+                childProperty.SetValue(parent, RandomLongBetween(10000, long.MaxValue));
                 return;
             }
 
@@ -51,13 +51,13 @@ namespace dotRandom
 
             if (childProperty.PropertyType == typeof(short))
             {
-                childProperty.SetValue(parent, RandomIntBetween(100, 999));
+                childProperty.SetValue(parent, RandomShortBetween(100, short.MaxValue));
                 return;
             }
 
             if (childProperty.PropertyType == typeof(byte))
             {
-                childProperty.SetValue(parent, RandomIntBetween(10, byte.MaxValue));
+                childProperty.SetValue(parent, RandomByteBetween(10, byte.MaxValue));
                 return;
             }
 
