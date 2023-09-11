@@ -19,6 +19,7 @@
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Company>jephbayf1986</Company>
+		<Version>1.0.1</Version>
 	</PropertyGroup>
 
 
