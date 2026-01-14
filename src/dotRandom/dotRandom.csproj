@@ -13,13 +13,13 @@
 		<PackageProjectUrl></PackageProjectUrl>
 		<RepositoryUrl>https://github.com/jephbayf1986/dotRandom</RepositoryUrl>
 		<PackageTags>Random;Testing;C#</PackageTags>
-		<PackageReleaseNotes>Initial release with random string, numbers, bool and generic model</PackageReleaseNotes>
+		<PackageReleaseNotes>Added String Name and Email options, plus fix for readonly properties</PackageReleaseNotes>
 		<NeutralLanguage>en</NeutralLanguage>
 		<PackageLicenseExpression>MIT</PackageLicenseExpression>
 		<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<Company>jephbayf1986</Company>
-		<Version>1.0.1</Version>
+		<Version>1.0.2</Version>
 	</PropertyGroup>
 
 
