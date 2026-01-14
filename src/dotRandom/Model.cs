@@ -31,9 +31,42 @@ namespace dotRandom
 
         private static void SetRandomProp<T>(this T parent, PropertyInfo childProperty)
         {
+            if (!childProperty.CanWrite)
+                return;
+
             if (childProperty.PropertyType == typeof(string))
             {
-                childProperty.SetValue(parent, RandomString());
+                if (childProperty.Name.ToLower().Contains("email"))
+                {
+                    childProperty.SetValue(parent, RandomEmail());
+                    return;
+                }
+
+                if (childProperty.Name.ToLower() == "firstname")
+                {
+                    childProperty.SetValue(parent, RandomFirstName());
+                    return;
+                }
+
+                if (childProperty.Name.ToLower() == "lastname" || childProperty.Name.ToLower() == "familyname" || childProperty.Name.ToLower() == "surname")
+                {
+                    childProperty.SetValue(parent, RandomLastName());
+                    return;
+                }
+
+                if (childProperty.Name.ToLower()== "username")
+                {
+                    childProperty.SetValue(parent, RandomUserName());
+                    return;
+                }
+
+                if (childProperty.Name.ToLower().Contains("name"))
+                {
+                    childProperty.SetValue(parent, RandomFullName());
+                    return;
+                }
+
+                childProperty.SetValue(parent, LoremIpsumSentences());
                 return;
             }
 

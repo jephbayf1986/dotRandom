@@ -64,5 +64,17 @@ namespace dotRandom.Tests
             resultList.All(x => x == x.ToUpper())
                       .ShouldBeTrue();
         }
+
+        [Fact]
+        public void ShouldGenerateLoremIpsumParagraph()
+        {
+            // Arrange
+
+            // Act
+            var lorumText = DotRandom.LoremIpsumText();
+
+            // Assert
+            lorumText.ShouldNotBeEmpty();
+        }
     }
 }
